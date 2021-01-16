@@ -1,2 +1,11 @@
-<h1>The shows</h1>
-<a href="/gallitheater/toons/hello mario.swf">Hello Mario</a>
+<html><head></head><body><h1>The shows</h1>
+<script>
+function watch(movie){
+document.getElementById('show').innerHTML = '<object width="100%" height="100%"><param name="movie" value="' + movie +'"><embed src="' + movie + '" width="100%" height="100%"></embed>'
+}
+</script>
+<script src="/gallitheater/ruffle/ruffle.js"></script>
+<button onclick="watch('/gallitheater/toons/hello mario.swf');">Hello Mario</button>
+
+<p id="show"></p>
+</body></html>
